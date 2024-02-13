@@ -2,4 +2,13 @@ week_1/video_2/ny_taxi_postgres_data/
 week_1/video_5/ny_taxi_postgres_data/
 week_1/video_5/pgadmin/
 week_2/mage-ai-terraform-templates/
-*csv
+week_2/mage-zoomcamp/mage_data/magic-zoomcamp/
+week_2/mage-zoomcamp/magic-zoomcamp/.*
+week_2/mage-zoomcamp/cedar-unison-413811-87753dffae79.json
+*.csv
+*.parquet
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
