@@ -1,3 +1,7 @@
+---
+url: https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2024/workshops/dlt_resources/data_ingestion_workshop.md
+---
+
 # Intro
 
 What is data loading, or data ingestion?
