@@ -17,21 +17,52 @@ During this week we explore dbt.
 
 Make sure to install the dependencies:
 
+```
 pip install pandas pyarrow google-cloud-storage
 set GOOGLE_APPLICATION_CREDENTIALS=cedar-unison-413811-47e15ebf5e92.json
 set GCP_GCS_BUCKET=mage-zoomcamp-sf879
+```
 
+I Used the script:
+https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/03-data-warehouse/extras/web_to_gcs.py
+
+I did some changes in order to :
+- upload huge parquet file
+- deal with dtype errors
+
+```
 python upload_dataset.py
+```
 
-Run the upload_dataset.py script
+## 2) Setup Bigquery tables
+
+- Like week 3 we are going to create 3 tables in Bigquery (native tables):
+
+1. Yellow Tripdata
+2. Green Tripdata
+3. FHV Tripdata
 
 ## Init dbt
 
 
+### usefull comands
 
-adding this file : 
+- Install dbt libraries
 
+```
+dbt specs
+```
 
+- Build Model
 
-# Setup DBT
+```
+dbt build 
+or
+dbt build --select <model_name>
+```
 
+- Generate Documentation
+
+```
+dbt docs generate
+```
