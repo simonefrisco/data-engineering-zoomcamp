@@ -10,6 +10,12 @@ week_2/mage-zoomcamp/cedar-unison-413811-87753dffae79.json
 *.csv
 *.parquet
 
+week_4/data/
+
+cedar-*.json
+test.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
