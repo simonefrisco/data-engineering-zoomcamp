@@ -1,5 +1,5 @@
 blocks:
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration: {}
   downstream_blocks: []
@@ -12,25 +12,27 @@ blocks:
   status: updated
   timeout: null
   type: data_exporter
-  upstream_blocks: []
+  upstream_blocks:
+  - load_taxi_data_from_github
   uuid: load_to_gcs
 - all_upstream_blocks_executed: true
   color: null
   configuration:
     file_source:
-      path: data_loaders/load_taxi_data_from_api.py
-  downstream_blocks: []
+      path: data_loaders/load_taxi_data_from_github.py
+  downstream_blocks:
+  - load_to_gcs
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: python
-  name: load_taxi_data_from_api
+  name: load_taxi_data_from_github
   retry_config: null
   status: not_executed
   timeout: null
   type: data_loader
   upstream_blocks: []
-  uuid: load_taxi_data_from_api
+  uuid: load_taxi_data_from_github
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -42,7 +44,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: web_to_gcs
+name: web_to_gcs v2
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -50,9 +52,10 @@ run_pipeline_in_one_process: false
 settings:
   triggers: null
 spark_config: {}
-tags: []
+tags:
+- GithubDataSource
 type: python
-uuid: web_to_gcs
+uuid: web_to_gcs_v2
 variables:
   service: green
   year: 2022

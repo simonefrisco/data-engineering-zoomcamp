@@ -142,4 +142,4 @@ dev:
   POSTGRES_HOST: "{{ env_var('POSTGRES_HOST') }}"
   POSTGRES_PORT: "{{ env_var('POSTGRES_PORT') }}"
 
-  GOOGLE_SERVICE_ACC_KEY_FILEPATH : 'cedar-unison-413811-87753dffae79.json'
+  GOOGLE_SERVICE_ACC_KEY_FILEPATH : 'cedar-unison-413811-47e15ebf5e92.json'

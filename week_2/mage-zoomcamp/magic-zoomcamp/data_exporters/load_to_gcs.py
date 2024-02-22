@@ -22,10 +22,10 @@ def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
     service = kwargs['service']
     year = kwargs['year']
 
-    print(df.dtypes)
+    print('Datafra' , df.shape)
 
     bucket_name = 'mage-zoomcamp-sf879'
-    object_key = f'{service}/{service}_tripdata_{year}.parquet'
+    object_key = f'taxi_data/{service}_tripdata_{year}.parquet'
 
     GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).export(
         df,

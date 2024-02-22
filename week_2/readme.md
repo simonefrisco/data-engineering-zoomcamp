@@ -34,7 +34,7 @@ https://console.cloud.google.com/storage/browser/mage-zoomcamp-sf879;tab=objects
 ## Service Account
 
 create a new service account with following permissions:
-
+![alt text](image-1.png)
 save a key in json file
 update the io_config.yaml with file path to **key.json
 
