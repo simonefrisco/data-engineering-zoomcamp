@@ -9,7 +9,7 @@ During this week we explore dbt.
 3 dataset :
 - yellow taxi 2019
 - yellow taxi 2020
-- fhd
+- fhv
 
 ## 1) Upload dataset
 
@@ -17,7 +17,6 @@ During this week we explore dbt.
 
 Make sure to install the dependencies:
 
-```
 ```
 pip install pandas pyarrow google-cloud-storage
 set GOOGLE_APPLICATION_CREDENTIALS=cedar-unison-413811-47e15ebf5e92.json
@@ -31,26 +30,27 @@ I did some changes in order to :
 - upload huge parquet file
 - deal with dtype errors
 
-```
-python upload_dataset.py
-```
-
 ## 2) Setup Bigquery tables
 
 - Like week 3 we are going to create 3 tables in Bigquery (native tables):
-```
+
 
 1. Yellow Tripdata
 2. Green Tripdata
 3. FHV Tripdata
+
 ```
 python upload_dataset.py
 ```
 
 
-## Init dbt
+## 3) Init dbt project
 
 setup dbt project -> https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/04-analytics-engineering/dbt_cloud_setup.md
+
+## Useful commands
+
+### Build
 
 ```
 dbt build 
@@ -58,7 +58,7 @@ or
 dbt build --select <model_name>
 ```
 
-- Generate Documentation
+### Install DBT packages
 
 - make sure to install the dependencies in dbt cloud 
 
@@ -75,6 +75,9 @@ packages:
 ```
 dbt deps
 ```
+### Generate Documentation
+
 ```
 dbt docs generate
 ```
+
