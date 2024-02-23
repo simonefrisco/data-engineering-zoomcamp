@@ -13,6 +13,8 @@ sources:
 
       - name: yellow_tripdata_beta
 
+      - name: fhv
+
 models:
     - name: stg_green_tripdata
       description: >
