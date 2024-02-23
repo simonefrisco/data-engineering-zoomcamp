@@ -20,7 +20,7 @@ select
     pickup_zone.borough as pickup_borough,
     pickup_zone.zone as pickup_zone,
     dropoff_zone.borough as dropoff_borough,
-    dropoff_zone.zone as dropoff_zone
+    pickup_zone.zone as dropoff_zone
 
 from fhv_tripdata
 
