@@ -7,7 +7,6 @@ workshops/dlt/
 week_2/mage-zoomcamp/mage_data/magic-zoomcamp/
 week_2/mage-zoomcamp/magic-zoomcamp/.*
 week_2/mage-zoomcamp/cedar-unison-413811-87753dffae79.json
-*.csv
 *.parquet
 
 week_4/data/
